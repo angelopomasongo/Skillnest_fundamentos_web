@@ -1,0 +1,40 @@
+<!--Tarea formulario: Crea un formulario de regristro
+para un sitio web para reservar una hora al doctor.
+Debe incluir:Nombre del paciente, fecha de la cita,
+fecha_nacimiento, sintomas del paciente, Ciudad(lista_despegable),
+Casillas de verificacion-->
+<!DOCTYPE html>
+<html lang="es">
+    <title>Reserva cita Medica</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cita Medica</title>
+</head>
+
+<body>
+    <form action="/registro" method="post">
+        <div>
+            <label for="Nombre Completo">Nombre Completo:</label>
+            <input type="Nombre" id="Nombre" name="Nombre" placeholder="Ingresa tu nombre">
+        </div>
+        <br>
+        <div>
+            <label for="Fecha_Reserva">Fecha_Reserva</label>
+            <input type="date" id="Fecha_Reserva" name="Fecha_Reserva">
+        </div>
+        <br>
+        <div>
+            <label for="fecha_nacimiento">fecha_nacimiento</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento"
+        </div>
+        <br><br>
+        <div>
+            <label for="Sintomas">Sintomas</label>
+            <textarea type="text" id="Sintomas" name="Sintomas"
+        </div>
+    </form>
+</body>
+
+</html>
