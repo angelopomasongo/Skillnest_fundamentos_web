@@ -1,0 +1,44 @@
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   body{
+      padding: 40px;
+   }
+}
+
+h1 {
+   color: rebeccapurple;
+}
+
+.green {
+   color: mediumseagreen;
+}
+
+#red {
+   color: tomato;
+}
+.quote p {
+   color: darkslategray;
+   font-style: italic;
+}
+.quote h4{
+   color: rgb(34, 228, 228);
+   font-weight: bold; /*negrita*/
+}
+
+
+
+.color_nombre{
+   color: blue;
+   background-color: chartreuse;
+}
+.color_rgb{
+   color: midnightblue;
+   background-color: chocolate;
+}
+.color_hex{
+   color: #044479;
+   background-color: black;
+}
