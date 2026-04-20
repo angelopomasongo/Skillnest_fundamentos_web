@@ -1,0 +1,47 @@
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+   body{
+      padding: 40px;
+      outline: solid 1px blue;
+      font-family: 'arial narrow', arial,sans-serif;
+}
+.container {
+   padding: 20px;  /* Alineado a la izquierda */
+}
+
+.textoizquierda {
+   text-align: left;  /* Alineado al centro */
+}
+
+.textocentro {
+   text-align:center;  /* Alineado a la derecha */
+}
+.textoderecha{
+   text-align: right;
+}
+
+.subtitulo1 {
+   text-decoration: underline;  /* Subrayado */
+   font-style: italic;  /* Cursiva */
+}
+
+.tachado {
+   text-decoration: line-through;  /* Texto tachado */
+}
+
+.sindecoracion {
+   text-decoration: none; 
+   color: green; /* Sin decoración */
+}
+/*grosor de fuente*/
+.negrita {
+   font-weight: bold;  /* Negrita */
+}
+
+.seminegrita{
+   font-weight: 100;  /* Fuente más delgada */
+}
