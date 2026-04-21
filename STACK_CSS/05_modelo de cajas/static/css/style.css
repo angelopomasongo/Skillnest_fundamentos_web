@@ -1,0 +1,46 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+.titulo {
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+.parrafos {
+   text-align: center;
+   font-family:'roboto' sans-serif;
+   margin-bottom: 20px;
+}
+
+.container {
+   width: 950px;
+   margin: 0 auto;
+}
+
+.cajas {
+   display: inline-block;
+   padding: 75px  20px;
+   color: white;
+   font-weight: bold;
+   width: 300px;
+   height: 200px;
+   border-radius: 10px;
+}
+
+.caja1 {
+   text-align: center;
+   background-color: #008dd2;
+}
+
+.caja2{
+   text-align: center;
+   background-color: #ee433a;
+}
+
+.caja3 {
+   text-align: center;
+   background-color: #00c56a;
+}
