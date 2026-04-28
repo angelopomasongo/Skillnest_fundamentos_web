@@ -1,0 +1,53 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+.centrado{
+   text-align: center;
+}
+.container{
+   padding: 20px;
+   width: 900px;
+   margin: 0 auto;
+   text-align: center;
+}
+.Botón_redondeado {
+   border: 3px solid black;
+   padding: 10px 40px;
+   border-radius: 40px;
+   cursor: pointer;
+   height: 50px;
+   width: 150px;
+   box-shadow: 10px 5px 5px black;
+}
+.caja_redondeada {
+   cursor: pointer;
+   border: none;
+   width: 60px;
+   height: 60px;
+   padding: 10px 16px;
+   background-color: rgb(226, 128, 0);
+   font-weight: bold;
+   color: white;
+   border-radius: 50%;
+   text-align: center;
+}
+.row {
+   padding: 30px;
+}
+.Botón_no_redondeado{
+   padding: 10px;
+   border: 1px solid rgb(0, 77, 136);
+   cursor: pointer;
+   height: 50px;
+   width: 150px;
+   box-shadow: 5px 5px 5px rgb(0, 0, 0);
+   background-color: rgb(0, 77, 136);
+   color: white;
+}
+.cursiva {
+   color: blue;
+   margin-top: 15px;
+   font-style: italic;
+}
