@@ -1,0 +1,14 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.header{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: #1F8714;
+
+}
