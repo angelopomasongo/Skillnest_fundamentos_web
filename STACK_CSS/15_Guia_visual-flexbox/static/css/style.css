@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(201, 164, 164, 0.842);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+.header {
+    background-color: #1e193b;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #334155;
+    padding: 15px;
+
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main {
+    padding: 30px;
+}
+
+.seccion {
+    background-color: white;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 2px 8px rgb(49, 49, 49);
+}
+.contenedor{
+    display: flex;
+    background-color:rgb(214, 214, 214) ;
+    height: 200px;
+    border: 3px dashed #94a3b8;
+    margin-top: 20px;
+
+}
+/*CAJAS A MANIPULAR*/
+.caja{
+    width: 80px;
+    height: 80px;
+    background-color: slateblue;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*ejemplos*/
+/*1.-justifi content + gap*/
+.ejemplo1{
+    justify-content: center;
+    gap: 20px;
+}
+.ejemplo2{
+    align-items: center;
+    gap: 20px;
+}
+.ejemplo3{
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.ejemplo4{
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+.caja-grande{
+    width: 100px;
+    height: 100px;
+}
+.ejemplo5{
+    justify-content: center;
+    align-items: center ;
+}
