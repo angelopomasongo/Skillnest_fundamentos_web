@@ -19,22 +19,28 @@ body {
 .col {
    display: flex;
    flex: 1;
-   background-color: rgb(15, 112, 80);
+   background-color: rgb(8, 204, 139);
    border-radius: 5px;
    border: 10px;
    height: 50px;
    align-items: center;
    justify-content: center;
    width: 10px;
+   transition: transform 0.9s ease;
 }
 
 /* Ajuste de tamaños específicos */
 .col-2 {
    flex: 2;
-   background-color: rgb(7, 165, 112);
+   
 }
 
 .col-3 {
    flex: 3;
-   background-color: rgb(143, 79, 7);
+  
+}
+.col:hover{
+   background-color: rgb(39, 39, 97);
+   color: black;
+   transform: scale (1.0) ;
 }
