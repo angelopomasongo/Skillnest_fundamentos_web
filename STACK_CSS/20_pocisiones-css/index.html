@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="static/css/style.css" </head>
+
+<body>
+    <header>
+        <nav class="barra-navegacion">
+            <h1>Position: static</h1>
+            <a href="#" class="enlace-nav">Haz scroll hacia abajo⬇</a>
+        </nav>
+    </header>
+    <main class="contenedor-principal">
+        <section class="tarjeta">
+            <h2>Position: static</h2>
+            <p class="explicacion">El bloque oscuro tiene
+                <code>top:40px></code>
+                en el codigo, para ser
+                <b>static</b> ignora la orde y
+                se queda en la fila
+            </p>
+            <div class="bloque-normal">bloque 1</div>
+            <div class="bloque-estatico">bloque 2 (intento moverse)</div>
+            <div class="bloque-normal">bloque 3</div>
+        </section>
+        <section class="tarjeta">
+            <h2>Position 2: relative</h2>
+            <p class="explicacion">Bloque naranja se movio 25px hacia abajo, pero <b>dejo un hueco</b> que impide mover
+                el bloque</p>
+            <div class="bloque-normal">bloque 1</div>
+            <div class="molde-fantasma">
+                <div class="bloque-relative">bloque 2 (se movio)</div>
+            </div>
+            <div class="bloque-normal">bloque 3</div>
+        </section>
+        <section class="tarjeta">
+            <h2>Position 3: adsolute</h2>
+            <p class="explicacion">El boton rojo (x) flota anclado
+                a la esquina de su contenedor (relative) <b>sin estorbar 
+                    ni empujar</b> al texto
+            </p>
+            <div class="ventana-modal">
+            <div class="boton-cerrar">X</div>
+            <p style="color: rgb(126, 20, 20); font-size: 1rem;">soy un mensaje dentro de la ventana modal.
+                La x flota encima de mi gracias a Position
+            </p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
