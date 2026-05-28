@@ -1,63 +1,82 @@
-*{
-    padding:0;
-    margin:0;
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
-body{
-     background-color: #F4F4F4;
-    color:rgba(0, 0, 0, 0.774);
-   
+
+body {
+    background-color: #F4F4F4;
+    color: rgba(0, 0, 0, 0.774);
+
 }
 
-.caja{
-     display: flex;
+.section{
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.caja {
+    display: flex;
     background-color: white;
     border-radius: 10px;
-    width: 450px;
-   height: 300px;
+    width: 400px;
+    height: 360px;
     box-shadow: 0 5px 15px black;
     flex-direction: column;
-    gap:15px;
+    gap: 15px;
     position: relative;
     align-items: center;
-    justify-content: center ;
+    justify-content: center;
     justify-self: center;
     margin-top: 100px;
     text-align: center;
+    padding: 20px;
 }
-.nombre{
+
+.nombre {
     color: black;
-    text-align:start;
+    text-align: start;
     font-weight: bold;
     font-size: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.descripcion{
+
+.descripcion {
     color: rgb(98, 149, 151);
 }
-.boton{
-    padding: 12px;
-    margin-top: 35px;
+
+.boton {
+    padding: 15px;
+    margin-top: 12px;
     background-color: #3498DB;
     color: white;
     border: none;
     border-radius: 5px;
 }
-img{
-    position: absolute;
-   
-    background-color:;
-    color: white;
-    width: 32px;
-    height:32px ;
-    padding: 12px;
-    text-align: center;
+
+img {
+    max-width: 150px;
     border-radius: 50%;
+}
+.imagen-nueva{
+    position: absolute;
+    top: -100px;
+    left: 130px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: rgb(180, 123, 0);
     display: flex;
     align-items: center;
     justify-content: center;
-   
+    color: white;
     font-weight: bold;
-   
-   
+    font-size: 0.8rem;
+    border: 5px solid rgb(194, 23, 23);
+
+}
+.link{
+    font-weight: 700;
+    color: blue;
 }
