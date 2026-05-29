@@ -4,34 +4,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario con DIV</title>
+    <title>Formulario de registro</title>
 </head>
 
 <body>
-    <form action="/registro" method="post">
-        <div>
-            <label for="nombre_completo">Tu nombre completo:</label>
-            <input type="text" id="nombre_completo" name="nombre_completo" placeholder="Ingresa tu nombre">
-        </div>
+    <h1>Crear una cuenta en Discord</h1>
 
+    <form action="Registro" method="post">
         <div>
-            <label for="correo">Correo electrónico:</label>
-            <input type="text" id="correo" name="correo" placeholder="Ingresa tu correo">
+            <label for="Nombre"><strong>Nombre:</strong></label>
+            <input type="text" id="Nombre" name="nombre" placeholder="Ingresa tu Nombre">
         </div>
-
+        <br>
         <div>
-            <label for="contraseña">Contraseña:</label>
-            <input type="password" id="contraseña" name="contraseña" placeholder="Ingresa tu contraseña" />
+            <label for="Apellido"><strong>Apellido:</strong></label>
+            <input type="text" id="Apellido" name="Apellido" placeholder="Ingresa tu Apellido">
         </div>
-
+        <br>
         <div>
-            <input type="checkbox" id="suscribirse" name="suscribirse" checked>
-            <label for="suscribirse">Deseo suscribirme al boletín informativo.</label>
+            <label for="Correo_electrónico"><strong>Correo_electrónico:</strong></label>
+            <input type="email" id="Correo_electrónico" name="Correo electrónico" placeholder="Ingresa tu Correo">
+            <br>
         </div>
-
+        <br>
         <div>
-            <input type="submit" value="Registrarse">
+            <label for="Contraseña"><strong>Contraseña:</strong></label>
+            <input type="password" id="Contraseña" name="Contraseña" placeholder="Ingresa tu contraseña">
+            <br>
         </div>
+        <br>
+        <div>
+            <label for="Confirmar_contraseña"><strong>Confirmar_contraseña:</strong></label>
+            <input type="password" id="Confirmar_contraseña" name="Confirmar_contraseña" placeholder="Confirmar tu contraseña">
+            <br>
+        </div>
+        <br>
+        <div>
+            <label for="Fecha_nacimiento"><strong>Fecha_nacimiento:</strong></label>
+            <input type="date" id="Fecha_nacimiento" name="Fecha_nacimiento">
+            <br>
+        </div>
+        <br>
+        <div>
+            <label><strong>Genero:</strong></label>
+            <input type="radio" id="Masculino" value="Masculino" name="genero">
+            <label for="Masculino">Masculino</label>
+            <input type="radio" id="Femenino" value="Femenino" name="genero">
+            <label for="Femenino">Femenino</label>
+            <input type="radio" id="prefiero_no_decirlo" value="prefiero_no_decirlo" name="genero">
+            <label for="prefiero_no_decirlo">Prefiero no decirlo</label>
+            <br>
+        </div>
+        <br>
+        <div>
+            <label><strong>Descripcion sobre ti:</strong></label>
+            <br>
+            <textarea id="comentario" name="comentario" rows="5" cols="30"></textarea>
+            <br>
+        </div>
+        <div>
+            <br>
+            <label for="Selecciona_tus_intereses"><strong>Selecciona tus
+                    intereses:</strong></label><br>
+            <select id="Selecciona_tus_intereses" name="Selecciona tus intereses">
+                <option value="Musica">Musica</option>
+                <option value="Peliculas">Peliculas</option>
+                <option value="Deportes">Deportes</option>
+                <option value="Tecnologia">Tecnologia</option>
+            </select>
+        </div>
+        <div>
+            <br>
+            <input type="checkbox">
+            <label>
+                <strong>registrarte, aceptas los <a
+                        href="https://media.es.wired.com/photos/63ffb584727167aa817b29f2/16:9/w_2560%2Cc_limit/GettyImages-82570115-corr.jpg">
+                        Términos
+                        y condiciones de Discord.</a> </strong>
+            </label>
+        </div>
+        <br>
+        <input type="submit" value="Registrarse">
     </form>
 </body>
 
