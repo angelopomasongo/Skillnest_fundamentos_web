@@ -37,6 +37,7 @@ function sistemaDescuento(){
 // “Acceso permitido”
 // o “Acceso denegado”
 
+
 // ✅ Ejercicio 3: Clasificación de temperatura
 // 📝 Enunciado
 // Solicitar una temperatura y clasificar:
@@ -46,6 +47,23 @@ function sistemaDescuento(){
 // Además:
 // Si la temperatura supera los 35 grados, mostrar una alerta adicional:
 //  “Temperatura extrema”.
+function mostrarTemperatura(){
+  let temperatura = parseInt(prompt("Ingresa la temperatura actual:"))
+  if (temperatura < 10 && temperatura > -30) {
+    mensaje = "Hace Frio"
+  } else if (temperatura >= 10 && temperatura <= 24){
+    mensaje = "temperatura agradable";
+  } else if (temperatura >= 25 && temperatura <= 50){
+    mensaje = "Hace calor";
+  }else{
+    mensaje = " Ingresar valores validos!"
+  }
+  alert (mensaje)
+  //alerta adicional
+  if (temperatura >35) {
+    mensaje = "\n ¡Alerta! : Temperatura Extrema";
+  }
+}
 
 // ✅ Ejercicio 4: Verificación de administrador
 // 📝 Enunciado
