@@ -1,91 +1,90 @@
 console.log("Conexion exitosa...");
 //VideoJuegos
 function juegos() {
-  let videojuegos = [
-    { nombre: "Minecraft", edadRecomendada: 7 },
-    { nombre: "FIFA 23", edadRecomendada: 3 },
-    { nombre: "Call of Duty", edadRecomendada: 18 },
-    { nombre: "Fortnite", edadRecomendada: 12 },
-  ];
+    let videojuegos = [
+        { nombre: "Minecraft", edadRecomendada: 7 },
+        { nombre: "FIFA 23", edadRecomendada: 3 },
+        { nombre: "Call of Duty", edadRecomendada: 18 },
+        { nombre: "Fortnite", edadRecomendada: 12 },
+    ];
 
-  let edadMinima = 12;
-  let recomendados = [];
+    let edadMinima = 12;
+    let recomendados = [];
 
-  for (let i = 0; i < videojuegos.length; i++) {
-    if (videojuegos[i].edadRecomendada <= edadMinima) {
-      recomendados.push(videojuegos[i].nombre);
+    for (let i = 0; i < videojuegos.length; i++) {
+        if (videojuegos[i].edadRecomendada <= edadMinima) {
+            recomendados.push(videojuegos[i].nombre);
+        }
     }
-  }
-  alert("Juegos recomendados: ", recomendados);
+    alert(`Juegos recomendados ${recomendados}`);
 }
-//cANCIONES
-function musica() {
-  let historialReproduccion = [
-    "Shallow",
-    "Blinding Lights",
-    "Shallow",
-    "Anti-Hero",
-    "Shallow",
-    "Bad Habits",
-  ];
+    //cANCIONES
+    function musica() {
+        let historialReproduccion = [
+            "Shallow",
+            "Blinding Lights",
+            "Shallow",
+            "Anti-Hero",
+            "Shallow",
+            "Bad Habits",
+        ];
+        let cancionBuscada = "Shallow";
+        let contador = 0;
+        for (let i = 0; i < historialReproduccion.length; i++) {
+            if (historialReproduccion[i] === cancionBuscada) {
+                contador++;
+            }
+        }
 
-  let cancionBuscada = "Shallow";
-  let contador = 0;
-
-  for (let i = 0; i < historialReproduccion.length; i++) {
-    if (historialReproduccion[i] === cancionBuscada) {
-      contador++;
+        alert(`La canción ${cancionBuscada} se reprodujo contador 3 veces.`);
     }
-  }
 
-  alert("La canción", cancionBuscada, "se reprodujo", contador, "veces.");
-}
-//TORNEO
-function Torneo() {
-  let jugadores = [
-    "Luis",
-    "Andrea",
-    "Carlos",
-    "Sofía",
-    "Pedro",
-    "Martina",
-    "Javier",
-    "Valentina",
-  ];
-  let tamanoGrupo = 3;
-  let grupos = [];
-  let grupoActual = [];
+    //TORNEO
+    function Torneo() {
+        let jugadores = [
+            "Luis",
+            "Andrea",
+            "Carlos",
+            "Sofía",
+            "Pedro",
+            "Martina",
+            "Javier",
+            "Valentina",
+        ];
+        let tamanoGrupo = 3;
+        let grupos = [];
+        let grupoActual = [];
 
-  for (let i = 0; i < jugadores.length; i++) {
-    grupoActual.push(jugadores[i]);
+        for (let i = 0; i < jugadores.length; i++) {
+            grupoActual.push(jugadores[i]);
 
-    if (grupoActual.length === tamanoGrupo || i === jugadores.length - 1) {
-      grupos.push(grupoActual);
-      grupoActual = [];
+            if (grupoActual.length === tamanoGrupo || i === jugadores.length - 1) {
+                grupos.push(grupoActual);
+                grupoActual = [];
+            }
+        }
+
+        alert(`Grupos formados:  ${grupos}`);
     }
-  }
+    //CINE
+    function cine() {
+        let filaClientes = [
+            "María",
+            "José",
+            "Fernanda",
+            "Diego",
+            "Valeria",
+            "Samuel",
+        ];
+        let cantidadAtendidos = 3;
+        let atendidos = [];
 
-  alert("Grupos formados: ", grupos);
-}
-//CINE
-function cine() {
-  let filaClientes = [
-    "María",
-    "José",
-    "Fernanda",
-    "Diego",
-    "Valeria",
-    "Samuel",
-  ];
-  let cantidadAtendidos = 3;
-  let atendidos = [];
+        for (let i = 0; i < cantidadAtendidos; i++) {
+            atendidos.push(filaClientes[i]);
+        }
 
-  for (let i = 0; i < cantidadAtendidos; i++) {
-    atendidos.push(filaClientes[i]);
-  }
+        filaClientes = filaClientes.slice(cantidadAtendidos);
 
-  filaClientes = filaClientes.slice(cantidadAtendidos);
-
-  alert("Clientes atendidos: ", atendidos);
-  alert("Clientes en espera: ", filaClientes);
-}
+        alert(`Clientes atendidos:  ${atendidos}`);
+        alert(`Clientes en espera:  ${filaClientes}`);
+    }
