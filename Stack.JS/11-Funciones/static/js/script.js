@@ -32,16 +32,43 @@ function encontrarMator() {
 /*crear una funcion que reciba 3 parametros, a, b , c.
 debe sumar a+b y el resultado restarlo por c
 devolver el valor final y mostrar con un alert
-*/ 
-function Ejercicio(){
-function sumaResta(a, b, c) {
-    let suma = a + b;
-    let resultado = suma - c;
-    return resultado;
+*/
+function Ejercicio() {
+    function sumaResta(a, b, c) {
+        let suma = a + b;
+        let resultado = suma - c;
+        return resultado;
+    }
+    //creacion de variables
+    let numero1 = 5;
+    let numero2 = 10;
+    let numero3 = 3;
+    //mostramos el resultado
+    let resultadoFinal = sumaResta(numero1, numero2, numero3);
+    alert(`El resultado final de la suma y resta es: ${resultadoFinal}`);
 }
-let numero1 = 5;
-let numero2 = 10;
-let numero3 = 3;
-let resultadoFinal = sumaResta(numero1, numero2, numero3);
-alert(`El resultado final de la suma y resta es: ${resultadoFinal}`);
+
+/*
+Crear una funcion que reciba 1 parametro y permita atravez de un bucle 
+contar hasta este.
+ej:se recibe el numero 5 y muestra : 1 - 2 - 3 - 4 - 5
+*/
+function mostrarConteo(){
+
+let parametro = parseInt(prompt(`ingresa el limite del contador`));
+if (parametro <= 100){
+    resultado = contarHasta(parametro);
+alert(resultado.join(" - "))
+} else {
+    alert("Ingrese un valor inferior a 100")
+}
+
+
+}
+function contarHasta(a){
+    let numero = []
+    for (let i = 1; i <= a; i++) {
+    numero.push(i)
+}
+return numero;
 }
