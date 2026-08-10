@@ -1,29 +1,25 @@
-console.log("Conexion exitosa con JS...");
-
-const btnLogin = document.getElementById('btn-login');
-
-btnLogin.onclick = function () {
-    if (btnLogin.innerText === 'Iniciar sesión') {
-        btnLogin.innerText = 'Cerrar sesión';
-    } else {
-        btnLogin.innerText = 'Iniciar sesión';
-    }
-};
-
-
-const btnProfile = document.getElementById('btn-profile');
-
-btnProfile.onclick = function () {
-    alert("Redirigiendo a tu perfil...");
-};
-
-
-const likeButtons = document.querySelectorAll('.btn-like');
-
-for (let i = 0; i < likeButtons.length; i++) {
-    likeButtons[i].onclick = function () {
-        let currentLikes = parseInt(this.innerText);
-        currentLikes += 1;
-        this.innerText = currentLikes + " Me gusta";
+console.log("Conexion Exitosa con JS...");
+document.addEventListener('DOMContentLoaded', () => {
+    const btnInicioSesion = document.getElementById('btn-inicio-sesion');
+    btnInicioSesion.onclick = function () {
+        if (this.innerText === "Iniciar sesión") {
+            this.innerText = "Cerrar sesión";
+        } else {
+            this.innerText = "Iniciar sesión";
+        }
     };
-}
+    const btnPerfil = document.getElementById('btn-perfil');
+    btnPerfil.onclick = function () {
+        alert("¡Bienvenido a tu perfil de usuario!");
+    };
+    const botonesMeGusta = document.querySelectorAll('.boton-me-gusta');
+    botonesMeGusta.forEach(boton => {
+        boton.onclick = function () {
+            let textoActual = this.innerText;
+            let cantidadLikes = parseInt(textoActual);
+            cantidadLikes += 1;
+            this.innerText = cantidadLikes + " Me gusta";
+        };
+    });
+
+});

@@ -10,8 +10,7 @@ body {
     color: #111;
 }
 
-
-.navbar {
+.barra-navegacion {
     background-color: #a59aff;
     display: flex;
     justify-content: space-between;
@@ -24,7 +23,7 @@ body {
     font-size: 24px;
 }
 
-.search-bar {
+.barra-busqueda {
     padding: 10px 15px;
     border-radius: 20px;
     border: none;
@@ -32,7 +31,7 @@ body {
     outline: none;
 }
 
-.btn {
+.boton {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
@@ -41,17 +40,16 @@ body {
     transition: 0.3s;
 }
 
-.btn-login {
+.boton-inicio-sesion {
     background-color: #7663f7;
     border-radius: 20px;
 }
 
-.btn-login:hover {
+.boton-inicio-sesion:hover {
     background-color: #5c4cd4;
 }
 
-
-.container {
+.contenedor {
     display: flex;
     gap: 20px;
     padding: 30px 40px;
@@ -60,71 +58,70 @@ body {
     align-items: flex-start;
 }
 
-.feed {
+.muro {
     flex: 2;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.sidebar {
+.barra-lateral {
     flex: 1;
 }
 
-
-.card {
+.tarjeta {
     background: white;
     padding: 25px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
-.post h2 {
+.publicacion h2 {
     margin-bottom: 10px;
     font-size: 22px;
 }
 
-.meta {
+.meta-datos {
     font-size: 14px;
     margin-bottom: 15px;
     line-height: 1.4;
     color: #333;
 }
 
-.post p:not(.meta) {
+.publicacion p:not(.meta-datos) {
     margin-bottom: 20px;
     line-height: 1.5;
 }
 
-.btn-like {
+.boton-me-gusta {
     background-color: #ff6b76;
     border-radius: 5px;
 }
 
-.btn-like:hover {
+.boton-me-gusta:hover {
     background-color: #e85a65;
 }
 
-.welcome-card {
+.tarjeta-bienvenida {
     text-align: center;
 }
 
-.welcome-card h2 {
+.tarjeta-bienvenida h2 {
     margin-bottom: 15px;
     font-size: 20px;
 }
 
-.welcome-card p {
+.tarjeta-bienvenida p {
     margin-bottom: 20px;
     color: #333;
     line-height: 1.4;
 }
 
-.btn-perfil {
+.boton-perfil {
     background-color: #00d2d3;
     border-radius: 5px;
 }
 
-.btn-perfil:hover {
+.boton-perfil:hover {
     background-color: #00b5b6;
 }
