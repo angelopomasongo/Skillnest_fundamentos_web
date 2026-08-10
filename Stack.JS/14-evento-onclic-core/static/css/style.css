@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    color: #111;
+}
+
+
+.navbar {
+    background-color: #a59aff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.search-bar {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    width: 400px;
+    outline: none;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+}
+
+.btn-login {
+    background-color: #7663f7;
+    border-radius: 20px;
+}
+
+.btn-login:hover {
+    background-color: #5c4cd4;
+}
+
+
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 30px 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
+.feed {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar {
+    flex: 1;
+}
+
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.post h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.meta {
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    color: #333;
+}
+
+.post p:not(.meta) {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.btn-like {
+    background-color: #ff6b76;
+    border-radius: 5px;
+}
+
+.btn-like:hover {
+    background-color: #e85a65;
+}
+
+.welcome-card {
+    text-align: center;
+}
+
+.welcome-card h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.welcome-card p {
+    margin-bottom: 20px;
+    color: #333;
+    line-height: 1.4;
+}
+
+.btn-perfil {
+    background-color: #00d2d3;
+    border-radius: 5px;
+}
+
+.btn-perfil:hover {
+    background-color: #00b5b6;
+}
