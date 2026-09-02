@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5efe6; /* Fondo beige claro */
+}
+
+/* Barra superior */
+.header {
+    background-color: #433633; /* Fondo marrón */
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header input {
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: none;
+    width: 250px;
+}
+
+.header button {
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: none;
+    background-color: #d1c2b5;
+    cursor: pointer;
+}
+
+/* Tarjeta central */
+.contenedor {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.tarjeta {
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    max-width: 500px;
+}
+
+.tarjeta img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.tarjeta p {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
